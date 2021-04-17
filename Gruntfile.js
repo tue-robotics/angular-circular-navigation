@@ -6,16 +6,16 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // default task
-  grunt.registerTask('default', ['jshint', 'karma:unit']);
-  grunt.registerTask('watch', ['karma:watch']);
-  grunt.registerTask('coverage', ['karma:coverage', 'coveralls']);
+  grunt.task.registerTask('default', ['jshint', 'karma:unit']);
+  grunt.task.registerTask('watch', ['karma:watch']);
+  grunt.task.registerTask('coverage', ['karma:coverage']);
 
 
-  // perform test in Firefox on travis ci
+  // perform test in Firefox on CI
   var testConfig = function(configFile, customOptions) {
     var options = { configFile: configFile, keepalive: true };
-    var travisOptions = process.env.TRAVIS && { browsers: ['Firefox'] };
-    return grunt.util._.extend(options, customOptions, travisOptions);
+    var ciOptions = process.env.CI && { browsers: ['FirefoxHeadless'] };
+    return grunt.util._.extend(options, customOptions, ciOptions);
   };
 
   grunt.initConfig({
@@ -43,13 +43,6 @@ module.exports = function (grunt) {
       coverage: {
         options: testConfig('test/karma.conf.js'),
         reporters: ['coverage']
-      }
-    },
-
-    coveralls: {
-      options: {
-        debug: true,
-        coverage_dir: 'coverage'
       }
     },
 
