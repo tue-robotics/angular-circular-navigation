@@ -29,10 +29,10 @@
     "url": "https://github.com/maxklenk/angular-circular-navigation/issues"
   },
   "dependencies": {
-    "angular": "^1.8.0",
-    "angular-mocks": "^1.8.0"
+    "angular": "^1.8.0"
   },
   "devDependencies": {
+    "angular-mocks": "^1.8.0",
     "grunt": "^1.0.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-jshint": "^3.0.0",
