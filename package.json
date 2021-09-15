@@ -7,7 +7,9 @@
     "angular-circular-navigation.css"
   ],
   "scripts": {
-    "test": "grunt"
+    "build": "grunt --verbose",
+    "test": "grunt coverage",
+    "watch": "grunt watch"
   },
   "repository": {
     "type": "git",
@@ -36,9 +38,9 @@
     "grunt": "^1.0.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-jshint": "^3.0.0",
-    "grunt-karma": "^4.0.0",
+    "grunt-karma": "^4.0.2",
     "json-tree2": "^0.1.5",
-    "karma": "^4.0.0",
+    "karma": "^6.3.4",
     "karma-chrome-launcher": "^3.0.0",
     "karma-coverage": "^2.0.0",
     "karma-firefox-launcher": "^2.0.0",

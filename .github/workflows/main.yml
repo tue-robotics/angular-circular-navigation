@@ -20,6 +20,6 @@ jobs:
       - name: Install
         run: npm install
       - name: Build
-        run: grunt --verbose
+        run: npm run build
       - name: Test
-        run: grunt coverage
+        run: npm run test
