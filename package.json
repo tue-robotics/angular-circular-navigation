@@ -7,7 +7,9 @@
     "angular-circular-navigation.css"
   ],
   "scripts": {
-    "test": "grunt"
+    "build": "grunt --verbose",
+    "test": "grunt coverage",
+    "watch": "grunt watch"
   },
   "repository": {
     "type": "git",
