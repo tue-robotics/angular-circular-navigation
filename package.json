@@ -1,0 +1,10 @@
+{
+  "name": "angular-circular-navigation-demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.8.0",
+    "angular-circular-navigation": "git+https://github.com/tue-robotics/angular-circular-navigation.git",
+    "json-tree2": "^0.1.5"
+  },
+  "devDependencies": {}
+}
