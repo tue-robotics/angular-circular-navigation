@@ -46,19 +46,19 @@
       var app = angular.module('demoApp', ['angularCircularNavigation', 'json-tree']);
 
       app.controller('Controller', function ($scope) {
-        $scope.switchAxis = function (clicked) {
+        $scope.switchAxis = function (options, clicked) {
           $scope.options.items[0].isActive = false;
           $scope.options.items[1].isActive = false;
           clicked.isActive = true;
         };
-        $scope.switchColor = function (clicked) {
+        $scope.switchColor = function (options, clicked) {
           $scope.options.items[7].isActive = false;
           $scope.options.items[8].isActive = false;
           $scope.options.items[9].isActive = false;
           clicked.isActive = true;
           $scope.options.button.background = clicked.background;
         };
-        $scope.switchType = function (clicked) {
+        $scope.switchType = function (options, clicked) {
           $scope.options.items[3].isActive = false;
           $scope.options.items[4].isActive = false;
           $scope.options.items[5].isActive = false;
@@ -74,7 +74,7 @@
           size: '',
           button: {
             content: '',
-            cssClass: 'fas fa-chart-bar',
+            cssClass: 'far fa-chart-bar',
             background: 'red',
             color: 'white',
             size: 'small'
@@ -89,14 +89,14 @@
           }, {
             empty: true
           }, {
-            cssClass: 'fas fa-chart-bar',
+            cssClass: 'far fa-chart-bar',
             isActive: true,
             onclick: $scope.switchType
           }, {
             cssClass: 'fas fa-camera-retro',
             onclick: $scope.switchType
           }, {
-            cssClass: 'fas fa-paper-plane',
+            cssClass: 'far fa-paper-plane',
             onclick: $scope.switchType
           }, {
             empty: true
