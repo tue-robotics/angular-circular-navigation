@@ -44,7 +44,7 @@
     "karma-chrome-launcher": "^3.0.0",
     "karma-coverage": "^2.0.0",
     "karma-firefox-launcher": "^2.0.0",
-    "karma-jasmine": "^4.0.0",
+    "karma-jasmine": "^5.0.0",
     "load-grunt-tasks": "^5.1.0"
   }
 }
