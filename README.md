@@ -2,9 +2,6 @@
 
 [![CI](https://github.com/tue-robotics/angular-circular-navigation/actions/workflows/main.yml/badge.svg)](https://github.com/tue-robotics/angular-circular-navigation/actions/workflows/main.yml)
 
-[![dependencies Status](https://status.david-dm.org/gh/tue-robotics/angular-circular-navigation.svg)](https://david-dm.org/tue-robotics/angular-circular-navigation)
-[![devDependencies Status](https://status.david-dm.org/gh/tue-robotics/angular-circular-navigation.svg?type=dev)](https://david-dm.org/tue-robotics/angular-circular-navigation?type=dev)
-
 [![Coverage Status](https://coveralls.io/repos/maxklenk/angular-circular-navigation/badge.png?branch=master)](https://coveralls.io/r/maxklenk/angular-circular-navigation?branch=master)
 
 angular-circular-navigation is a [AngularJS](https://github.com/angular/angular.js) directive, which is build on top of the Tutorial [Building a circular navigation with css transform](http://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/) by [Sara Soueidan](http://sarasoueidan.com/).
